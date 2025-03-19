@@ -1,1 +1,96 @@
 /* You can add global styles to this file, and also import other style files */
+
+$primary: #495057;
+$display-font-sizes: (
+  1: 6rem,
+  2: 5.5rem,
+  3: 5rem,
+  4: 4.5rem,
+  5: 4rem,
+  6: 3.5rem,
+) !default;
+
+@import "bootstrap/scss/bootstrap.scss";
+
+body {
+  font-family: "Montserrat", serif !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.5px;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+  // font-weight: 700 !important;
+  font-family: "Bebas Neue", serif !important;
+}
+
+label {
+  letter-spacing: 4px;
+  font-size: 16px;
+}
+
+.btn-dark {
+  --bs-btn-bg: darkblue !important;
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(
+    0deg,
+    #f01ad3 20%,
+    #8527ff 50%,
+    #1e7fe6 90%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#loader {
+  animation-name: example;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes example {
+  0% {
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    top: 100%;
+    // height: 100%;
+  }
+  30% {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    top: 0;
+    // height: 0%;
+  }
+  70% {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    top: 0;
+  }
+  100% {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    top: -100%;
+  }
+}
