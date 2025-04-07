@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-loader',
@@ -8,12 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrl: './loader.component.scss',
 })
 export class LoaderComponent {
-  constructor(private router: Router) {}
-  current: any;
+  constructor() {}
 
-  ngOnInit() {
-    this.router.events.subscribe((res) => {
-      this.current = this.router.url;
-    });
-  }
+  @Input() current = '';
 }

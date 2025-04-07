@@ -1,44 +1,53 @@
-<div class="overflow-hidden vh-100">
-  <app-loader></app-loader>
-  <div
-    class="container-fluid d-flex flex-column justify-content-between px-5 text-bg-dark overflow-auto h-100"
+<div
+  class="d-flex flex-column justify-content-between text-bg-dark overflow-auto h-100"
+>
+  <nav
+    class="navbar navbar-dark navbar-expand-lg fixed-top py-4 px-5 z-2"
+    style="
+      background-image: linear-gradient(
+        to bottom,
+        rgb(12, 12, 12),
+        rgba(12, 12, 12, 0)
+      );
+    "
   >
-    <nav
-      class="navbar navbar-dark navbar-expand-lg fixed-top py-4 px-5 z-2"
-      style="
-        background-image: linear-gradient(
-          to bottom,
-          rgb(12, 12, 12),
-          rgba(12, 12, 12, 0)
-        );
-      "
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand flex-grow-1 fs-3" routerLink="/">ATIKAH A.</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link" routerLink="/about" routerLinkActive="active"
-              >ABOUT</a
-            >
-            <a class="nav-link" routerLink="/work" routerLinkActive="active"
-              >WORK</a
-            >
-          </div>
+    <div class="container-fluid">
+      <a class="navbar-brand flex-grow-1 fs-3" routerLink="/">ATIKAH A.</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <div class="navbar-nav ms-auto">
+          <a
+            class="nav-link"
+            routerLink="/about"
+            routerLinkActive="active"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            >ABOUT</a
+          >
+          <a
+            class="nav-link"
+            routerLink="/work"
+            routerLinkActive="active"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            >WORK</a
+          >
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
+  <div class="container-fluid px-3 px-md-5">
     <router-outlet style="display: none"></router-outlet>
-    <app-footer></app-footer>
   </div>
+  <app-footer></app-footer>
 </div>

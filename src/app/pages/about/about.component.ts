@@ -1,16 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { LoaderComponent } from '../../components/loader/loader.component';
 
 @Component({
   selector: 'app-about',
-  imports: [CommonModule],
+  imports: [CommonModule, LoaderComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss',
 })
 export class AboutComponent {
+  title = 'About';
   experiences = [
     {
-      designation: 'Platform Development Specialist',
+      designation: 'Frontend Engineering Specialist',
       company: 'CelcomDigi Berhad',
       period: 'June 2023 - Present',
     },

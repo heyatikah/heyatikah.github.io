@@ -1,39 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
 
-$primary: #495057;
-$display-font-sizes: (
-  1: 6rem,
-  2: 5.5rem,
-  3: 5rem,
-  4: 4.5rem,
-  5: 4rem,
-  6: 3.5rem,
-) !default;
+$primary: #5c45fd;
+// $display-font-sizes: (
+//   1: 6rem,
+//   2: 5.5rem,
+//   3: 5rem,
+//   4: 4.5rem,
+//   5: 4rem,
+//   6: 3.5rem,
+// ) !default;
 
 @import "bootstrap/scss/bootstrap.scss";
 
-body {
+html {
   font-family: "Montserrat", serif !important;
   font-weight: 300 !important;
   letter-spacing: 0.5px;
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-nav {
-  // font-weight: 700 !important;
-  font-family: "Bebas Neue", serif !important;
-}
+// .h1,
+// .h2,
+// .h3,
+// .h4,
+// .h5,
+// .h6,
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// nav {
+//   // font-weight: 700 !important;
+//   font-family: "Bebas Neue", serif !important;
+// }
 
 label {
   letter-spacing: 4px;
@@ -47,13 +47,19 @@ label {
 .text-gradient {
   background: -webkit-linear-gradient(
     0deg,
-    #f01ad3 20%,
-    #8527ff 50%,
-    #1e7fe6 90%
+    #b2a7fa 20%,
+    #8674fb 50%,
+    #5c45fd 90%
   );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.text-glow {
+  color: #a89bff;
+  font-weight: 500;
+  text-shadow: 0px 0px 14px #5c45fd;
 }
 
 #loader {
@@ -93,4 +99,12 @@ label {
     border-bottom-left-radius: 100%;
     top: -100%;
   }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }

@@ -1,3 +1,4 @@
+<app-loader [current]="title"></app-loader>
 <div class="px-5 vh-100 d-flex flex-column justify-content-center">
   <div class="my-auto text-center">
     <h1 class="display-1"><span class="text-gradient">About</span></h1>
@@ -6,12 +7,12 @@
 </div>
 <section class="mb-5">
   <div class="row">
-    <div class="col">
+    <div class="col-12 col-md-4">
       <h1 class="display-2">Experiences</h1>
     </div>
-    <div class="col-8">
-      <div class="border-top py-4" *ngFor="let experience of experiences">
-        <h1 class="mb-1 fw-lighter">{{ experience.designation }}</h1>
+    <div class="col-12 col-md-8">
+      <div class="border-top py-5" *ngFor="let experience of experiences">
+        <h1 class="mb-3 fw-lighter">{{ experience.designation }}</h1>
         <p class="d-flex justify-content-between">
           <span>{{ experience.company }}</span>
           <small class="border border-1 rounded-pill px-3 text-uppercase">{{
@@ -22,7 +23,7 @@
     </div>
   </div>
 </section>
-<section class="mb-5">
+<!-- <section class="mb-5">
   <div class="row">
     <div class="col">
       <h1 class="display-2">Skills</h1>
@@ -40,4 +41,4 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
